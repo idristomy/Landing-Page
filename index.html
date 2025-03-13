@@ -97,9 +97,9 @@
                     <button type="button" class="btn btn-primary mr-2" style="border-radius: 10px;" onclick="updateOldPrice('12')">12 بوصة</button>
                     <button type="button" class="btn btn-primary" style="border-radius: 10px;" onclick="updateOldPrice('10')">10 بوصة</button>
                 </div>
-                <p id="oldPrice" style="text-decoration: line-through; color: gray;">السعر القديم: <del>1200 د.ج</del></p>
+                <p id="oldPrice" style="text-decoration: line-through; color: gray;">السعر القديم: <del>99 دينار</del></p>
                 <span style="background-color: red; color: white; display: inline-block; padding: 5px 10px; transform: rotate(-.1turn); margin-right: 20px; position: relative; top: -15px;">خصم 25%</span>
-                <p id="newPrice" style="margin: 0 !important; font-weight: bold;font-size: 25px; color: green; display: inline; margin-right: 10px;">السعر الجديد: <strong>900 د.ج</strong></p>
+                <p id="newPrice" style="margin: 0 !important; font-weight: bold;font-size: 25px; color: green; display: inline; margin-right: 10px;">السعر الجديد: <strong>79 دينار</strong></p>
                 <p class="lead mt-4"> الجهاز اللوحي الأمثل لتطوير مهارات الكتابة والرسم لدى الأطفال، حيث يجمع بين الترفيه والتعليم في منتج واحد</p>
                 <div class="row text-center mt-5" id="orderButton">
                         <button class=" w-100 btn py-3 btn-primary" data-toggle="modal" data-target="#order-form" style="font-size:20px;font-weight: 700; box-shadow: 1px -1px 16px -1px rgba(0,0,0,0.75);">اطلب الان     <i class="fa-solid fa-cart-shopping"></i></button>
@@ -129,74 +129,7 @@
                                         <label for="phone" dir="rtl">رقم الهاتف</label>
                                         <input name="Phone-number" type="number" class="form-control" id="phone" placeholder="أدخل رقم هاتفك" required>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="state">الولاية</label>
-                                        <select name="state" class="form-control" id="state" onchange="updateShippingCost()" required>
-                                            <option value="">اختر ولايتك</option>
-                                            <option value="Adrar">أدرار</option>
-                                            <option value="Chlef">الشلف</option>
-                                            <option value="Laghouat">الأغواط</option>
-                                            <option value="Oum El Bouaghi">أم البواقي</option>
-                                            <option value="Batna">باتنة</option>
-                                            <option value="Bejaia">بجاية</option>
-                                            <option value="Biskra">بسكرة</option>
-                                            <option value="Bechar">بشار</option>
-                                            <option value="Blida">البليدة</option>
-                                            <option value="Bouira">البويرة</option>
-                                            <option value="Tamanrasset">تمنراست</option>
-                                            <option value="Tebessa">تبسة</option>
-                                            <option value="Tlemcen">تلمسان</option>
-                                            <option value="Tiaret">تيارت</option>
-                                            <option value="Tizi Ouzou">تيزي وزو</option>
-                                            <option value="Algiers">الجزائر</option>
-                                            <option value="Djelfa">الجلفة</option>
-                                            <option value="Jijel">جيجل</option>
-                                            <option value="Setif">سطيف</option>
-                                            <option value="Saida">سعيدة</option>
-                                            <option value="Skikda">سكيكدة</option>
-                                            <option value="Sidi Bel Abbes">سيدي بلعباس</option>
-                                            <option value="Annaba">عنابة</option>
-                                            <option value="Guelma">قالمة</option>
-                                            <option value="Constantine">قسنطينة</option>
-                                            <option value="Medea">المدية</option>
-                                            <option value="Mostaganem">مستغانم</option>
-                                            <option value="M'Sila">المسيلة</option>
-                                            <option value="Mascara">معسكر</option>
-                                            <option value="Ouargla">ورقلة</option>
-                                            <option value="Oran">وهران</option>
-                                            <option value="El Bayadh">البيض</option>
-                                            <option value="Illizi">إليزي</option>
-                                            <option value="Bordj Bou Arreridj">برج بوعريريج</option>
-                                            <option value="Boumerdes">بومرداس</option>
-                                            <option value="El Tarf">الطارف</option>
-                                            <option value="Tindouf">تندوف</option>
-                                            <option value="Tissemsilt">تيسمسيلت</option>
-                                            <option value="El Oued">الوادي</option>
-                                            <option value="Khenchela">خنشلة</option>
-                                            <option value="Souk Ahras">سوق أهراس</option>
-                                            <option value="Tipaza">تيبازة</option>
-                                            <option value="Mila">ميلة</option>
-                                            <option value="Ain Defla">عين الدفلى</option>
-                                            <option value="Naama">النعامة</option>
-                                            <option value="Ain Temouchent">عين تموشنت</option>
-                                            <option value="Ghardaia">غرداية</option>
-                                            <option value="Relizane">غليزان</option>
-                                            <option value="Timimoun">تيميمون</option>
-                                            <option value="Bordj Badji Mokhtar">برج باجي مختار</option>
-                                            <option value="Ouled Djellal">أولاد جلال</option>
-                                            <option value="Beni Abbes">بني عباس</option>
-                                            <option value="In Salah">عين صالح</option>
-                                            <option value="In Guezzam">عين قزام</option>
-                                            <option value="Touggourt">تقرت</option>
-                                            <option value="Djanet">جانت</option>
-                                            <option value="El M'Ghair">المغير</option>
-                                            <option value="El Menia">المنيعة</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="municipality">البلدية</label>
-                                        <input name="municipality" type="text" class="form-control" id="municipality" placeholder="أدخل بلديتك" required>
-                                    </div>
+                                   
                                     <div class="form-group">
                                         <div class="form-group text-right">
                                             <label for="quantity">الكمية</label>
@@ -432,9 +365,6 @@
         <div class="row text-right" dir="rtl">
             <div class="col-lg-6 mb-4">
             <h2>تواصل معنا</h2>
-            <p>إذا كنت ترغب في شراء شيء آخر أو تحتاج إلى مزيد من الإجابات، يرجى الاتصال بنا على الرقم التالي:</p>
-            <p><strong>رقم الهاتف: 0549034559</strong></p>
-            <p>أو عبر وسائل التواصل الاجتماعي:</p>
             <p>
                 <a href="https://web.facebook.com/profile.php?id=61552038116856" target="_blank" class="btn btn-primary"><i class="fab fa-facebook-f"></i> Facebook</a>
                 <a href="https://wa.me/0549034559" target="_blank" class="btn btn-success"><i class="fab fa-whatsapp"></i> WhatsApp</a>
