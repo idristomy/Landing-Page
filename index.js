@@ -4,96 +4,15 @@ function updateOldPrice(size) {
     let oldPrice, newPrice;
 
     if (size === '12') {
-        oldPrice = 1200;
-        newPrice = 900;
+        oldPrice = 99;
+        newPrice = 79;
     } else if (size === '10') {
-        oldPrice = 1000;
-        newPrice = 750;
+        oldPrice = 89;
+        newPrice = 69;
     }
 
-    oldPriceElement.innerHTML = `السعر القديم: <del>${oldPrice} د.ج</del>`;
-    newPriceElement.innerHTML = `السعر الجديد: <strong>${newPrice} د.ج</strong>`;
-}
-
-function updateShippingCost() {
-    const state = document.getElementById('state').value;
-    const shippingCostElement = document.getElementById('shippingCost');
-    const totalCostElement = document.getElementById('totalCost');
-    const productCostElement = document.getElementById('productCost');
-    let productCost = parseInt(productCostElement.textContent.split(' ')[2]);
-    let shippingCost = 0;
-
-    const shippingRates = {
-        'Adrar': 1250,
-        'Chlef': 800,
-        'Laghouat': 950,
-        'Oum El Bouaghi': 850,
-        'Batna': 850,
-        'Bejaia': 800,
-        'Biskra': 950,
-        'Bechar': 1000,
-        'Blida': 600,
-        'Bouira': 750,
-        'Tamanrasset': 1500,
-        'Tebessa': 850,
-        'Tlemcen': 900,
-        'Tiaret': 880,
-        'Tizi Ouzou': 750,
-        'Algiers': 450,
-        'Djelfa': 950,
-        'Jijel': 800,
-        'Setif': 800,
-        'Saida': 850,
-        'Skikda': 850,
-        'Sidi Bel Abbes': 850,
-        'Annaba': 800,
-        'Guelma': 850,
-        'Constantine': 800,
-        'Medea': 750,
-        'Mostaganem': 800,
-        'M\'Sila': 880,
-        'Mascara': 850,
-        'Ouargla': 950,
-        'Oran': 750,
-        'El Bayadh': 980,
-        'Illizi': 0,
-        'Bordj Bou Arreridj': 800,
-        'Boumerdes': 650,
-        'El Tarf': 850,
-        'Tindouf': 0,
-        'Tissemsilt': 880,
-        'El Oued': 930,
-        'Khenchela': 880,
-        'Souk Ahras': 880,
-        'Tipaza': 700,
-        'Mila': 850,
-        'Ain Defla': 800,
-        'Naama': 1000,
-        'Ain Temouchent': 850,
-        'Ghardaia': 1000,
-        'Relizane': 880,
-        'Timimoun': 1300,
-        'Bordj Badji Mokhtar': 0,
-        'Ouled Djellal': 950,
-        'Beni Abbes': 1000,
-        'In Salah': 1500,
-        'In Guezzam': 1500,
-        'Touggourt': 950,
-        'Djanet': 0,
-        'El M\'Ghair': 980,
-        'El Menia': 980
-    };
-
-    const nonDeliverableStates = ['Illizi', 'Bordj Badji Mokhtar', 'Djanet', 'Tindouf'];
-
-    if (nonDeliverableStates.includes(state)) {
-        shippingCostElement.textContent = 'غير قابلة للتوصيل';
-        totalCostElement.textContent = 'غير قابلة للتوصيل';
-    } else {
-        shippingCost = shippingRates[state] || 0;
-        shippingCostElement.textContent = `تكلفة الشحن: ${shippingCost} د.ج`;
-        totalCostElement.textContent = `السعر الإجمالي: ${productCost + shippingCost} د.ج`;
-    }
+    oldPriceElement.innerHTML = `السعر القديم: <del>${oldPrice} دينار</del>`;
+    newPriceElement.innerHTML = `السعر الجديد: <strong>${newPrice} دينار</strong>`;
 }
 
 function updatePrice(size) {
@@ -106,15 +25,15 @@ function updatePrice(size) {
     let quantity = parseInt(quantityElement.value);
 
     if (size === '12') {
-        productCost = 900;
+        productCost = 79;
     } else if (size === '10') {
-        productCost = 750;
+        productCost = 69;
     }
 
     productCost *= quantity;
 
-    productCostElement.textContent = `تكلفة المنتج: ${productCost} د.ج`;
-    totalCostElement.textContent = `السعر الإجمالي: ${productCost + shippingCost} د.ج`;
+    productCostElement.textContent = `تكلفة المنتج: ${productCost} دينار`;
+    totalCostElement.textContent = `السعر الإجمالي: ${productCost + shippingCost} دينار`;
 }
 
 document.getElementById('quantity').addEventListener('input', () => {
