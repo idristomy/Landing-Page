@@ -1,0 +1,18 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.carousel-inner img{
+    height: 500px;
+
+}
+
+@media (max-width:768px){
+    .carousel-inner img{
+        height: 300px;
+        object-fit: contain;
+    }
+    
+}   
